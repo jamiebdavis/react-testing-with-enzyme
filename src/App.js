@@ -1,25 +1,23 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./components/header";
+import Body from "./components/body";
+import Footer from "./components/footer";
 
 class App extends Component {
+  state = {
+    name: "Jamie Davis",
+    age: "33",
+    email: "jjj@jjj.com"
+  };
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h4>React testing with enzyme</h4>
+        <Header />
+        <Body />
+        <Footer />
       </div>
     );
   }
